@@ -3,6 +3,7 @@ import {
   HeadBackground,
   StyledCardBack,
   StyledCardFront,
+  StyledCardLogo,
   StyledCardSection,
   StyledForm,
   StyledInput,
@@ -23,6 +24,7 @@ export const CardForm = (): JSX.Element => {
         <p>{cvcNumber}</p>
       </StyledCardBack>
       <StyledCardFront>
+        <StyledCardLogo />
         <p>{cardNumber}</p>
         <StyledCardSection>
           <p>{cardUser}</p>
