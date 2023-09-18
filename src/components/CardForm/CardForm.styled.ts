@@ -5,18 +5,17 @@ import type { IProps } from './CardForm.types';
 export const StyledDiv = styled.div`
   width: 100vw;
   height: 100vh;
-  display: block;
+  display: flex;
+  align-items: center;
 
   @media (max-width: 768px) {
-    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
   }
 `;
 
 export const HeadBackground = styled.header`
-  width: 30%;
+  width: 25%;
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -32,38 +31,64 @@ export const HeadBackground = styled.header`
 `;
 
 export const StyledCardBack = styled.div`
-  width: 250px;
-  height: 200px;
+  width: 400px;
+  height: 220px;
+  border-radius: 15px;
   position: absolute;
-  top: 25px;
-  right: 25px;
-  background-repeat: no-repeat;
+  top: 450px;
+  left: 380px;
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
   background-image: url('src/assets/images/bg-card-back.png');
-  background-size: 250px 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: ${({ theme }) => theme.colors.white};
 
   p {
-    font-size: 12px;
     position: absolute;
-    top: 55px;
+    top: 80px;
     left: 80%;
+    letter-spacing: 1px;
+  }
+
+  @media (max-width: 768px) {
+    width: 250px;
+    height: 128px;
+    top: 25px;
+    left: 30%;
+
+    p {
+      font-size: 12px;
+      top: 48px;
+      left: 80%;
+    }
   }
 `;
 
 export const StyledCardFront = styled.div`
-  color: ${({ theme }) => theme.colors.white};
-  width: 420px;
-  height: 320px;
+  width: 400px;
+  height: 220px;
+  border-radius: 15px;
+  top: 160px;
+  left: 280px;
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
   background-repeat: no-repeat;
   background-image: url('src/assets/images/bg-card-front.png');
-  background-size: contain;
+  background-size: cover;
   position: absolute;
-  top: 160px;
-  left: 120px;
+
+  color: ${({ theme }) => theme.colors.white};
+
+  p {
+    font-size: 24px;
+    letter-spacing: 5px;
+    position: relative;
+    top: 45%;
+    left: 5%;
+  }
 
   @media (max-width: 768px) {
-    width: 270px;
-    height: 200px;
+    width: 250px;
+    height: 128px;
     top: 110px;
     left: 25px;
     padding: 10px;
@@ -78,26 +103,52 @@ export const StyledCardFront = styled.div`
   }
 `;
 
-export const StyledCardSection = styled.section`
+export const StyledCardLogo = styled.div`
+  width: 90px;
+  height: 40px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  background: url('src/assets/images/card-logo.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+
+  @media (max-width: 768px) {
+    width: 75px;
+    height: 30px;
+    left: 5px;
+  }
+`;
+
+export const StyledCardSection = styled.div`
   width: 90%;
   position: absolute;
-  bottom: 75px;
   left: 0;
+  bottom: 5px;
   display: flex;
   justify-content: space-between;
 
   p {
-    font-size: 12px;
-    margin: 10px;
+    font-size: 16px;
+  }
+
+  @media (max-width: 768px) {
+    width: 95%;
+    p {
+      font-size: 12px;
+      margin: 10px;
+    }
   }
 `;
 
 export const StyledForm = styled(Form)`
   width: 350px;
-  margin-top: 180px;
+  margin-left: 600px;
 
   @media (max-width: 768px) {
     margin-top: 220px;
+    margin-left: 0;
   }
 `;
 
