@@ -37,7 +37,7 @@ export const StyledCardBack = styled.div`
   position: absolute;
   top: 450px;
   left: 380px;
-  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  box-shadow: ${({ theme }) => theme.boxShadows.regular};
   background-image: url('src/assets/images/bg-card-back.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -70,7 +70,7 @@ export const StyledCardFront = styled.div`
   border-radius: 15px;
   top: 160px;
   left: 280px;
-  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  box-shadow: ${({ theme }) => theme.boxShadows.regular};
   background-repeat: no-repeat;
   background-image: url('src/assets/images/bg-card-front.png');
   background-size: cover;
