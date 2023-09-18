@@ -1,27 +1,35 @@
-# React + TypeScript + Vite
+# Interactive card details form
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This application is based on the task from frontend-mentor page, improved with several additional functionalities.
 
-Currently, two official plugins are available:
+## Installing
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Clone this repository to your local machine
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```
+gh repo clone xflameyoke/interactive-card-details-form
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Install all neccessary dependencies
+
+```
+npm install
+```
+
+Run the application
+
+```
+npm run dev
+```
+
+## Built with
+
+- [Vite](https://vitejs.dev/)
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Eslint](https://eslint.org/)
+- [Husky](https://typicode.github.io/husky/)
+- [Commitlint](https://commitlint.js.org/#/)
+- [Prettier](https://prettier.io/)
+- [Lint-staged](https://github.com/okonet/lint-staged)
+- [Styled-components](https://styled-components.com/)
