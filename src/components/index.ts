@@ -1,1 +1,2 @@
-export * from './CardForm'
+export * from './CardForm';
+export * from './CompleteState';
